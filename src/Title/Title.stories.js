@@ -8,3 +8,9 @@ storiesOf('Title', module)
     placeholder= "Username"
     text
 />)
+    .add('Comment', () => <Title
+    type="text"
+    placeholder= "Insert Comment Here"
+    text
+    Comment
+    />)

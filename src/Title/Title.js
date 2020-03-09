@@ -15,6 +15,9 @@ render() {
     if (types.includes(this.props.type)) {
         classes += ` Title-${this.props.type}`
     }
+    if (this.props.Comment) {
+      classes += ` Title-Comment`
+    }
     let placeholder = this.props.placeholder
       if (placeholder === "") {
           placeholder = this.props.label
