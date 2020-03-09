@@ -1,4 +1,5 @@
-import React, { Component } from "./node_modules/react";
+import React from "react";
+import "./Avatar.css";
 
 function Avatar(props) {
   return (
