@@ -1,5 +1,6 @@
-import React, { Component } from "./node_modules/react";
-import { Route, Link, Switch } from "./node_modules/react-router-dom";
+import React, { Component } from "react";
+import { Route, Link, Switch } from "react-router-dom";
+import Home from "./components/Home/Home";
 import "./App.css";
 
 class App extends Component {
@@ -25,8 +26,7 @@ class App extends Component {
         </nav>
         <main>
           <Switch>
-            <Route path="/" exact component={Component} />
-            <Route path="/new-post" component={NewPost} />
+            <Route path="/" exact component={Home} />
           </Switch>
         </main>
         <footer></footer>
