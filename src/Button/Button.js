@@ -7,7 +7,7 @@ const Button = (props) => {
 let types = ["white", ]
 
 if (types.includes(props.type)) {
-    classList += ` button-$props.type}`
+    classList += ` button-${props.type}`
 }
 
     return <button className={classList} onClick={props.onClick}>

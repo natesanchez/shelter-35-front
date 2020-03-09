@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import Title from './Title'
 
 storiesOf('Title', module)
-.add('Text Input Regular', () => <Title
+.add('Username', () => <Title
     type="text"
-    label="Username"
-    placeholder= ""
+    placeholder= "Username"
+    text
 />)
