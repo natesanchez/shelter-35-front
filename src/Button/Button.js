@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css'
 
 const Button = (props) => {
-    let classlist = "";
+    let classList = "";
 
 let types = ["white", ]
 
