@@ -3,9 +3,13 @@ button {
   padding: 5px 25px;
 }
 
-.button-white {
+/* .button-white {
   background-color: rgb(rgb(233, 233, 233));
   border: rgb(207, 207, 207);
+} */
+
+.button-white:hover {
+  cursor: pointer;
 }
 
 .button-enter {
@@ -36,4 +40,8 @@ button {
   border: 3px solid black;
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-edit:hover {
+  cursor: pointer;
 }
