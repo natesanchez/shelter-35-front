@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Age_restriction.css";
+import Button from "../Button/Button.js";
 
 function Agerestrict() {
   return (
@@ -34,9 +35,9 @@ function Agerestrict() {
         </div>
         <div class="button-container">
           <Link className="enterHome" to={"/home"}>
-            <button>Enter</button>
+            <Button label="Enter at your own Risk" />
           </Link>
-          <button>Exit</button>
+          <Button label="Thou Shall Not Pass!" />
         </div>
       </div>
     </div>
