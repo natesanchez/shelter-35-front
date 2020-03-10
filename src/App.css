@@ -2,6 +2,20 @@
   margin: 0;
   padding: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap');
+
+@FrederickaFont{
+  font-family: 'Fredericka the Great', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap')
+}
+@HennyFont{
+  font-family: 'Love Ya Like A Sister', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap')
+}
+@LoveFont{
+  font-family: 'Henny Penny', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap')
+}
 
 nav {
   background: black;
@@ -13,6 +27,7 @@ nav {
 }
 
 .title {
+
 }
 
 .headerLinkHome {

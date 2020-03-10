@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Avatar from "./components/Avatar/Avatar";
 import "./App.css";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -22,7 +23,7 @@ class App extends Component {
       <div>
         <nav>
           <Link className="headerLinkHome" to="/">
-            <h1 className="title">Shelter35</h1>
+            <h1 className="title" >Shelter35</h1>
           </Link>
         </nav>
         <main>

@@ -4,6 +4,7 @@ import "./Home.css";
 import catNames from "cat-names";
 import '../Loading Cat/loadingcat.css'
 
+
 class Home extends Component {
   constructor(props) {
     super(props);
