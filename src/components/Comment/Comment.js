@@ -20,9 +20,9 @@ export default class Comment extends React.Component {
     return (
       <div
         className={classList}
-        onClick={e => {
-          this.setState({ inputValue: e.target.value });
-        }}
+        // onClick={e => {
+        //   this.setState({ inputValue: e.target.value });
+        // }}
       >
         <TextBoxComponent
           multiline={true}

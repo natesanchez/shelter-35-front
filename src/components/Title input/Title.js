@@ -30,9 +30,9 @@ class Title extends React.Component {
           </label>
           <br />
           <input
-            onChange={e => {
-              this.setState({ inputValue: e.target.value });
-            }}
+            // onChange={e => {
+            //   this.setState({ inputValue: e.target.value });
+            // }}
             className={classes}
             type="text"
             name="input"
