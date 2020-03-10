@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny&display=swap");
+
+@hennyfont {
+  font-family: "Henny Penny", cursive;
+}
+.inputLabel {
+  font-family: "Henny Penny", cursive;
+}
+
+.newPostContainer {
+  margin: 30px;
+  border: 2px solid black;
+}
+
+form {
+  margin: 20px;
+  /* border: 2px solid purple; */
+}
+
+.newPostContainer {
+  background-color: rgba(240, 89, 178);
+}
