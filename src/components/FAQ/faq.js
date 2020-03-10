@@ -4,8 +4,8 @@ import "./faq.css";
 
 function faq() {
   return (
-    <div className="mainDesc">
-      <div class="description">
+    <div className="TopMain">
+      <div class="informative">
         <h1>FAQ</h1>
         <div class="container">
           <p>
