@@ -1,6 +1,8 @@
 button {
-  border-radius: 2px;
+  border-radius: 15px;
   padding: 5px 25px;
+  height: 40px;
+  width: 150px;
 }
 
 /* .button-white {
@@ -21,10 +23,10 @@ button {
 
 .button-enter:hover {
   cursor: pointer;
-  background-color: #4dd2ff;
+  background-color: yellow;
   border: 3px solid black;
   color: black;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .button-exit {
@@ -38,8 +40,8 @@ button {
   cursor: pointer;
   background-color: crimson;
   border: 3px solid black;
-  color: white;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .button-edit:hover {
