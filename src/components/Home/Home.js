@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import catNames from "cat-names";
 
 class Home extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class Home extends Component {
   render() {
     if (this.state.data) {
       let posts = this.state.data.map(post => {
+        let catUser = catNames.random();
         return (
           <div className="mainContain">
             <img
@@ -32,6 +34,8 @@ class Home extends Component {
               alt="cat"
             ></img>
             <div className="returnedContainerPosts">
+              <h3>{catUser}</h3>
+              <br />
               <h1 className="postTitle">{post.name}</h1>
               <br />
               <h2 className="postMessage">Message: {post.team}</h2>
