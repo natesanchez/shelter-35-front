@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route,
+  //  Link,
+    Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Avatar from "./components/Avatar/Avatar";
 import AgeRes from "./components/Age_restriction/Age_restriction";
