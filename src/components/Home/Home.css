@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Henny+Penny&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny&display=swap");
 
-@HennyFont{
-  font-family: 'Henny Penny', cursive;
+@hennyfont {
+  font-family: "Henny Penny", cursive;
 }
-.title { 
-  font-family: 'Henny Penny', cursive;
+.title {
+  font-family: "Henny Penny", cursive;
 }
 .mainContain {
   display: flex;
-  
+  padding: 15px 0px 0px 55px;
 }
 
 .returnedContainerPosts {
@@ -40,7 +40,7 @@
   background-color: #171717;
   border-radius: 10px;
   margin-top: 12px;
-  margin-left: 10px;
+  margin-left: 20px 0px 30px 0px;
   border: solid 1px white;
 }
 
@@ -54,6 +54,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .headerLinkHome {

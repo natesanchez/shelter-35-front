@@ -30,13 +30,12 @@ class Title extends React.Component {
           </label>
           <br />
           <input
-            onChange={e => {
-              this.setState({ inputValue: e.target.value });
-            }}
+            onChange={this.props.onChange}
             className={classes}
             type="text"
             name="input"
             placeholder={placeholder}
+            state={this.state.inputValue}
           />
         </div>
       );

@@ -18,16 +18,12 @@ export default class Comment extends React.Component {
     }
 
     return (
-      <div
-        className={classList}
-        onClick={e => {
-          this.setState({ inputValue: e.target.value });
-        }}
-      >
+      <div className={classList}>
         <TextBoxComponent
           multiline={true}
           placeholder="Place your grievances here..."
           value=""
+          onChange={this.props.onChange}
         />
       </div>
     );
