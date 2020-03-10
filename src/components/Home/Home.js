@@ -14,7 +14,7 @@ class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     if (!this.state.data) {
-      fetch("https://nba-pi.herokuapp.com/legends")
+      fetch("https://shelter35.herokuapp.com/posts")
         .then(res => res.json())
         .then(res => {
           this.setState({ data: res });
@@ -34,11 +34,11 @@ class Home extends Component {
               alt="cat"
             ></img>
             <div className="returnedContainerPosts">
-              <h3>{catUser}</h3>
+              <h3>User: {catUser}</h3>
               <br />
-              <h1 className="postTitle">{post.name}</h1>
+              <h1 className="postTitle"> Subject: {post.postTitle}</h1>
               <br />
-              <h2 className="postMessage">Message: {post.team}</h2>
+              <h2 className="postMessage">Message: {post.postComment}</h2>
             </div>
           </div>
         );
