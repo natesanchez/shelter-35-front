@@ -25,20 +25,26 @@ class Home extends Component {
     if (this.state.data) {
       let posts = this.state.data.map(post => {
         return (
-          <div className="returnedContainerPosts">
-            <h1 className="postTitle">{post.name}</h1>
-            <h2 className="postMessage">Message:{post.team}</h2>
+          <div className="mainContain">
+            <img
+              className="avatarCat"
+              src={`https://robohash.org/ca${post._id}?set=set4`}
+              alt="cat"
+            ></img>
+            <div className="returnedContainerPosts">
+              <h1 className="postTitle">{post.name}</h1>
+              <br />
+              <h2 className="postMessage">Message: {post.team}</h2>
+            </div>
           </div>
         );
       });
       return (
         <div className="postsMain">
-          <div className="mainHome">
-            <Link className="addPost" to={"/new-post"}>
-              Add Post
-            </Link>
-            {posts}
-          </div>
+          <Link className="addPost" to={"/new-post"}>
+            Add Post
+          </Link>
+          <div className="mainHome">{posts}</div>
         </div>
       );
     } else {
