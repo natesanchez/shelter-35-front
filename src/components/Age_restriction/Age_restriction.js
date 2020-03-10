@@ -5,7 +5,7 @@ import Button from "../Button/Button.js";
 
 function Agerestrict() {
   return (
-    <div className="main-desc">
+    <>
       <div class="description">
         <h1>SHELTER 35</h1>
         <div class="para-container">
@@ -40,7 +40,7 @@ function Agerestrict() {
           <Button label="Exit" type="exit" />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
