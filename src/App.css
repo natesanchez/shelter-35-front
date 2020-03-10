@@ -6,15 +6,12 @@
 
 @FrederickaFont{
   font-family: 'Fredericka the Great', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap')
 }
 @HennyFont{
-  font-family: 'Love Ya Like A Sister', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap')
+  font-family: 'Henny Penny', cursive;
 }
 @LoveFont{
-  font-family: 'Henny Penny', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Henny+Penny|Love+Ya+Like+A+Sister&display=swap')
+  font-family: 'Love Ya Like A Sister', cursive;
 }
 
 nav {
@@ -27,7 +24,7 @@ nav {
 }
 
 .title {
-
+  font-family: 'Henny Penny', cursive;
 }
 
 .headerLinkHome {
