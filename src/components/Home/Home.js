@@ -38,7 +38,6 @@ class Home extends Component {
             ></img>
             <div className="returnedContainerPosts">
               <h3>User: {catUser}</h3>
-              <br />
               <h1 className="postTitle"> Subject: {post.postTitle}</h1>
               <br />
               <h2 className="postMessage">Message: {post.postComment}</h2>
