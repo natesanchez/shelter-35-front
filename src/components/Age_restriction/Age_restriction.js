@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Age_restriction.css";
+// import "./Age_restriction.css";
 
 function Agerestrict() {
   return (
-    <div className="">
+    <div className="mainDesc">
       <div class="description">
         <h1>SHELTER 35</h1>
         <div class="para-container">

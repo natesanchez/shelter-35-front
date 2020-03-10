@@ -21,11 +21,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav>
-          <Link className="headerLinkHome" to="/">
-            <h1 className="title">Shelter35</h1>
-          </Link>
-        </nav>
         <main>
           <Switch>
             <Route path="/" exact component={AgeRes} />
