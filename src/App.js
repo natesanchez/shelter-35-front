@@ -6,11 +6,14 @@ import AgeRes from "./components/Age_restriction/Age_restriction";
 import FAQ from "./components/FAQ/faq";
 import "./App.css";
 import Post from "./components/Post/Post";
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null
+      data: null,
+      postComment: "",
+      postTitle: ""
     };
   }
 
