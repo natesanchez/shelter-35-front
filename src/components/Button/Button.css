@@ -1,10 +1,39 @@
 button {
-    border-radius: 2px;
-    padding: 5px 25px;
+  border-radius: 2px;
+  padding: 5px 25px;
 }
 
 .button-white {
-    background-color: rgb(rgb(233, 233, 233));
-    border: rgb(207, 207, 207)
+  background-color: rgb(rgb(233, 233, 233));
+  border: rgb(207, 207, 207);
 }
 
+.button-enter {
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+.button-enter:hover {
+  cursor: pointer;
+  background-color: #4dd2ff;
+  border: 3px solid black;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-exit {
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+.button-exit:hover {
+  cursor: pointer;
+  background-color: crimson;
+  border: 3px solid black;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

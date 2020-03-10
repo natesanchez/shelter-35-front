@@ -48,6 +48,11 @@ class Home extends Component {
       });
       return (
         <div className="postsMain">
+          <nav>
+            <Link className="headerLinkHome" to="/home">
+              <h1 className="title">Shelter35</h1>
+            </Link>
+          </nav>
           <Link className="addPost" to={"/new-post"}>
             Add Post
           </Link>
