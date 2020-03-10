@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import catNames from "cat-names";
-import '../Loading Cat/loadingcat.css'
-
+import "../Loading Cat/loadingcat.css";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: null,
-      videoURL:'https://cdn.dribbble.com/users/160117/screenshots/3197970/main.gif?vid=1'
+      videoURL:
+        "https://cdn.dribbble.com/users/160117/screenshots/3197970/main.gif?vid=1"
     };
   }
 
@@ -61,14 +61,14 @@ class Home extends Component {
       );
     } else {
       return (
-        <div className="mainLoad" >          
-        <video loop autoPlay>
-                <source src={this.state.videoURL} type="video/mp4" />
-                <source src={this.state.videoURL} type="video/ogg" />
-                Your browser does not support the video tag.
-        </video>
+        <div className="mainLoad">
+          <video loop autoPlay>
+            <source src={this.state.videoURL} type="video/mp4" />
+            <source src={this.state.videoURL} type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-    );
+      );
     }
   }
 }
