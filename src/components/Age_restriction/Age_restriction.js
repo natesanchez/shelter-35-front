@@ -35,9 +35,9 @@ function Agerestrict() {
         </div>
         <div class="button-container">
           <Link className="enterHome" to={"/home"}>
-            <Button label="Enter at your own Risk" />
+            <Button label="Enter" type="enter" />
           </Link>
-          <Button label="Thou Shall Not Pass!" />
+          <Button label="Exit" type="exit" />
         </div>
       </div>
     </div>
