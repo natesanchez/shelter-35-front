@@ -6,7 +6,6 @@ function Agerestrict() {
   return (
     <div className="">
       <div class="description">
-        <h1>SHELTER 35</h1>
         <div class="para-container">
           <p>
             The website contains age-restricted materials. If you are under the
