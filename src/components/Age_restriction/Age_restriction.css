@@ -1,13 +1,17 @@
-body {
+.main-desc {
   /* background-color: black; */
   background-image: url("https://thumbs.dreamstime.com/t/seamless-pattern-cute-black-cats-vector-texture-wallpapers-fills-web-page-backgrounds-42581438.jpg");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px;
   box-shadow: 0 0 8px 5px #bfbfbf;
   background-color: #3d3b3b;
   height: 600px;
@@ -30,7 +34,7 @@ p {
 .button-container {
   margin-top: 50px;
   display: flex;
-  border: red solid 2px;
+  /* border: red solid 2px; */
   width: 400px;
   height: 150px;
   flex-direction: row;
