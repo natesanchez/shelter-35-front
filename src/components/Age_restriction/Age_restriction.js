@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Age_restriction.css";
+import Button from "../Button/Button.js";
 
 function Agerestrict() {
   return (
-    <div className="mainDesc">
-      <div className="description">
-        <h1 className="ageTitle">SHELTER35</h1>
-        <div className="para-container">
-          <p className="ageP">
+    <div className="main-desc">
+      <div class="description">
+        <h1>SHELTER 35</h1>
+        <div class="para-container">
+          <p>
             The website contains age-restricted materials. If you are under the
             age of 21 (Sorry Braden) or have no sense of humor, this site is not
             for you.
@@ -34,11 +35,9 @@ function Agerestrict() {
         </div>
         <div className="button-container">
           <Link className="enterHome" to={"/home"}>
-            <button className="ageButton">Enter</button>
+            <Button label="Enter" type="enter" />
           </Link>
-          <button onClick={console.log("test")} className="ageButton">
-            Exit
-          </button>
+          <Button label="Exit" type="exit" />
         </div>
       </div>
     </div>
