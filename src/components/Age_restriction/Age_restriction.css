@@ -1,11 +1,12 @@
-.main-desc {
+/* .main-desc {
   background-color: black;
-  height: 100vh;
+.main-desc {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  height: 100%;
+} */
 
 .description {
   display: flex;
@@ -13,26 +14,26 @@
   align-items: center;
   box-shadow: 0 0 8px 5px #bfbfbf;
   background-color: #3d3b3b;
+  height: 100%;
+  margin: 40px;
 }
 
 h1 {
   margin-top: 30px;
   color: white;
+  font-family: "Henny Penny", cursive;
 }
 
 p {
-  margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
   color: yellow;
   font-size: 22px;
-  overflow-wrap: break-word;
-  margin: 20px;
+  /* overflow-wrap: break-word; */
 }
 
 .button-container {
   display: flex;
-  /* border: red solid 2px; */
   width: 400px;
   height: 100px;
   flex-direction: row;
@@ -47,7 +48,4 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.button-container {
 }
