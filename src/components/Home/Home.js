@@ -28,6 +28,7 @@ class Home extends Component {
   render() {
     if (this.state.data) {
       let posts = this.state.data.map(post => {
+        let testing = "test";
         let catUser = catNames.random();
         return (
           <div className="mainContain">
