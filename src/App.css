@@ -24,7 +24,14 @@ nav {
 }
 
 .title {
+<<<<<<< HEAD
   font-family: 'Henny Penny', cursive;
+=======
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+>>>>>>> upstream/master
 }
 
 .headerLinkHome {
