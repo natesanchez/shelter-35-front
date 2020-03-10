@@ -38,3 +38,18 @@
 
 .contentFloat {
 }
+
+nav {
+  background: black;
+  height: 90px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerLinkHome {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}

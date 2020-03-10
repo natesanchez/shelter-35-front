@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Age_restriction.css";
+// import "./Age_restriction.css";
 
 function Agerestrict() {
   return (
