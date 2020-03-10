@@ -1,6 +1,6 @@
 import React from "react";
-import { TextInput } from "react";
-import "./Title.css";
+import { TextField } from "react";
+import "./Comment.css";
 
 class Title extends React.Component {
   constructor(props) {

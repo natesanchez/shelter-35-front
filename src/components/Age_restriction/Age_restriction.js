@@ -14,7 +14,7 @@ function Agerestrict() {
             age of 21 (Sorry Braden) or have no sense of humor, this site is not
             for you.
           </p>
-          <p>
+          <p className="ageP">
             Shelter 35 is an open space to joke, be sarcastic and bond with
             others over anonymous banter during the SEI 35 experience. PLEASE,
             feel free to complain about work, let out your React anger, and sing
@@ -22,9 +22,9 @@ function Agerestrict() {
             happen). Here is where you get to do all that without judgement of
             being known for your struggles. Because let’s be honest…the bell
             curves are REAL. Also…we have given you random names and random cat
-            pictures for your every post. Hence…Shelter 35.
+            pictures for your every post. Hence…Shelter35.
           </p>
-          <p>
+          <p className="ageP">
             By entering this site you hereby agree to have fun and build
             camaraderie with your SEI 35 felines. You also acknowledge and agree
             that you are not offended by OBVIOUS jokes and playful sarcasm. By
@@ -33,7 +33,7 @@ function Agerestrict() {
             sense of humor.{" "}
           </p>
         </div>
-        <div class="button-container">
+        <div className="button-container">
           <Link className="enterHome" to={"/home"}>
             <Button label="Enter" type="enter" />
           </Link>

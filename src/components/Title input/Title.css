@@ -3,6 +3,7 @@
   font-family: sans-serif;
 }
 .Title-text {
+  padding-left: 5px;
   height: 38px;
   width: 300px;
   font-size: 14px;
@@ -12,4 +13,6 @@
 }
 .Title-Comment {
   height: 100px;
+  padding-left: 5px;
+  text-align: left;
 }
