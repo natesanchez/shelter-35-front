@@ -1,3 +1,5 @@
-.background {
-    background-color: #E7DFDD;
+.mainLoad {
+    background-color:rgb(232, 227, 225);
+    display:flex;
+    justify-content: center;
 }
