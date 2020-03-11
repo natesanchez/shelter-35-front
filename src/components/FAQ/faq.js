@@ -14,18 +14,12 @@ function faq() {
           <li>
            Shelter35 is a place to realese all the tears, fustration, happiness from our evil overlord "Zakk"
           </li>
-          <p>
-
-          </p>
            <ul>
            Do I need an Internet connection to use Shelter35?
           </ul>
           <li>
             Yes you do. Shelter35  is a cloud-based website, meaning that your Meow's are backed up and available wherever you are.
           </li>
-          <p>
-
-          </p>
           <ul>
           I'm really offended by that joke you posted!
           </ul>
@@ -39,12 +33,6 @@ function faq() {
           Please email nsanchez@usa.com If it’s not a holiday or a weekend, Nate would get back to you pretty slowly. Slower than a Snail.
           </li>
         </div>
-        {/* <div class="button-container">
-          <Link className="enterHome" to={"/home"}>
-            <button>Enter</button>
-          </Link>
-          <button>Exit</button>
-        </div> */}
       </div>
     </div>
   );
