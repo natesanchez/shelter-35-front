@@ -23,12 +23,17 @@ h1 {
   font-family: "Henny Penny", cursive;
 }
 
-p {
+ul, li {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  color: yellow;
   font-size: 22px;
   overflow-wrap: break-word;
   margin: 20px;
+}
+ul {
+  color: aqua;
+}
+li {
+  color: yellow;
 }

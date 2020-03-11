@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./Home.css";
 import catNames from "cat-names";
+import "./Home.css";
 import "../Loading Cat/loadingcat.css";
 
 class Home extends Component {
