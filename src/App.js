@@ -6,6 +6,7 @@ import AgeRes from "./components/Age_restriction/Age_restriction";
 import FAQ from "./components/FAQ/faq";
 import "./App.css";
 import Post from "./components/Post/Post";
+import Blog from "./components/Blog/Blog";
 
 class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={AgeRes} />
             <Route path="/new-post" component={Post} />
+            <Route path="/blog" component={Blog} />
             <Route path="/home" component={Home} />
             <Route path="/faq" component={FAQ} />
           </Switch>
