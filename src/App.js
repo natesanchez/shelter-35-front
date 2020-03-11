@@ -33,7 +33,6 @@ class App extends Component {
             <Route path="/faq" component={FAQ} />
           </Switch>
         </main>
-        <footer></footer>
       </div>
     );
   }

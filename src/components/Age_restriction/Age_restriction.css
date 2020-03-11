@@ -14,8 +14,8 @@
   align-items: center;
   box-shadow: 0 0 8px 5px #bfbfbf;
   background-color: #3d3b3b;
-  height: 100%;
-  margin: 40px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 h1 {
