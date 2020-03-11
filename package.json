@@ -40,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "@storybook/react": "^5.3.14"
+    "@storybook/react": "^5.3.14",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
   }
 }

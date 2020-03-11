@@ -54,7 +54,7 @@ class Home extends Component {
             <Link className="headerLinkHome" to="/home">
               <h1 className="title">Shelter35</h1>
             </Link>
-            <Link classname="faq" to="/faq">
+            <Link className="faq" to="/faq">
               <h1 className="title">FAQ</h1>
             </Link>
           </nav>
