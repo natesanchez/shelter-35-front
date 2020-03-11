@@ -44,7 +44,7 @@ class Blog extends Component {
               {/* <h2 className="User">User:{catUser}</h2> */}
                       <div Class="flex">
               <h4 className="CourseWeek">Course Week: {post.courseWeek}</h4>
-              <h5 className="Confidence">Content Confidence: {post.confidenceInYourContent}/100 </h5>
+              <h5 className="Confidence">Content Confidence: {post.confidenceInYourContent}/10 </h5>
               </div>
               <h6 className="Content">{post.content}</h6>
             </div>
