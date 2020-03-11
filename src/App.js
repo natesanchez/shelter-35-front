@@ -7,6 +7,8 @@ import FAQ from "./components/FAQ/faq";
 import "./App.css";
 import Post from "./components/Post/Post";
 import Blog from "./components/Blog/Blog";
+import Edit from "./components/Edit/Edit";
+import Delete from "./components/Delete/Delete";
 
 class App extends Component {
   constructor(props) {
@@ -33,6 +35,8 @@ class App extends Component {
             <Route path="/blog" component={Blog} />
             <Route path="/home" component={Home} />
             <Route path="/faq" component={FAQ} />
+            <Route path="/edit" component={Edit} />
+            {/* <Route path="/delete" component={Delete} /> */}
           </Switch>
         </main>
       </div>

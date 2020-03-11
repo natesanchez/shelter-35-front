@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import catNames from "cat-names";
 import "./Home.css";
 import "../Loading Cat/loadingcat.css";
+import Button from "../Button/Button";
 
 class Home extends Component {
   constructor(props) {
@@ -43,6 +44,18 @@ class Home extends Component {
               <h2 className="postMessage">Message: {post.postComment}</h2>
               <br />
               <h5 className="postId">postID: {post._id}</h5>
+              <div className="buttons">
+                {/* look into with router or pass props using link component */}
+                {/* <Link className="editPost" to="/edit">
+                  <Button label="Edit" type="edit" />
+                </Link> */}
+                {/* <Link className="deletePost" to="/delete">
+                  <Button label="Delete" type="delete" />
+                </Link> */}
+                <Link className="editPost" to="/edit">
+                  <Button label="Manipulate" type="manipulate" />
+                </Link>
+              </div>
             </div>
           </div>
         );
