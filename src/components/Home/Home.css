@@ -83,3 +83,7 @@ nav {
 .faq {
   text-decoration: none;
 }
+
+.buttons {
+  float: right;
+}
