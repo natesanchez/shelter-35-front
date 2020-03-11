@@ -1,5 +1,7 @@
 .mainLoad {
-    background-color:rgb(232, 227, 225);
-    display:flex;
-    justify-content: center;
+  background-color: rgb(232, 227, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

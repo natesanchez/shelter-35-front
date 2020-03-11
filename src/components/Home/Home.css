@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Henny+Penny&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny&display=swap");
 
-@HennyFont{
-  font-family: 'Henny Penny', cursive;
+@hennyfont {
+  font-family: "Henny Penny", cursive;
 }
-.title { 
-  font-family: 'Henny Penny', cursive;
+.title {
+  font-family: "Henny Penny", cursive;
 }
 .mainContain {
   display: flex;
+  padding: 15px 0px 0px 55px;
 }
 
 .returnedContainerPosts {
@@ -39,7 +40,7 @@
   background-color: #171717;
   border-radius: 10px;
   margin-top: 12px;
-  margin-left: 10px;
+  margin-left: 20px 0px 30px 0px;
   border: solid 1px white;
 }
 
@@ -52,7 +53,8 @@ nav {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .headerLinkHome {
@@ -63,4 +65,21 @@ nav {
 
 .postTitle {
   color: black;
+}
+
+.hiddenTitle {
+  /* color: black; */
+  color: rgba(20, 20, 20, 0.7);
+}
+
+.blog {
+  text-decoration: none;
+}
+
+.blog:hover {
+  cursor: default;
+}
+
+.faq {
+  text-decoration: none;
 }
