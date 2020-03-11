@@ -1,10 +1,11 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./faq.css";
 
 function faq() {
   return (
     <div className="TopMain">
+
       <div class="informative">
         <h1>FAQ</h1>
         <div class="container">
@@ -37,5 +38,4 @@ function faq() {
     </div>
   );
 }
-
 export default faq;

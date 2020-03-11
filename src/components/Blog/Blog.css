@@ -3,17 +3,19 @@
 .Main {
     background-position: center;
     background-image: url("https://download.hipwallpaper.com/desktop/1920/1080/24/20/XbpANu.jpg");
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
   .BlogPost{
     border: 3px solid rgba(0, 255, 221, 0.459);
     border-radius: 5px;
-    max-width: 100%;
+    max-width: 50%;
     max-height: 100%;
     margin: 25px;
     padding: 22px;
