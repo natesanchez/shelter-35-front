@@ -20,6 +20,7 @@ export default class Comment extends React.Component {
     return (
       <div className={classList}>
         <TextBoxComponent
+          className="normal"
           multiline={true}
           placeholder="Place your grievances here..."
           value=""

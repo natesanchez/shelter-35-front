@@ -4,7 +4,7 @@ import "./Button.css";
 const Button = props => {
   let classList = "";
 
-  let types = ["white", "enter", "exit", "edit"];
+  let types = ["white", "enter", "exit", "edit", "delete"];
 
   if (types.includes(props.type)) {
     classList += ` button-${props.type}`;
