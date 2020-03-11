@@ -61,7 +61,7 @@ class Edit extends Component {
             <label className="inputLabel">Post Title: </label>
             <Title
               type="text"
-              placeholder="Post Title"
+              placeholder="Post ID"
               text
               onChange={this.onChangeTitle}
             />
