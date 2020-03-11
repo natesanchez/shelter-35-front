@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Bree+Serif|Lemonada&display=swap');
+
 .Main {
     background-position: center;
     background-image: url("https://download.hipwallpaper.com/desktop/1920/1080/24/20/XbpANu.jpg");
@@ -7,33 +9,44 @@
     justify-content: center;
     align-items: center;
 }
-.Container {
-    display: flex;
-    padding: 15px 0px 0px 55px;
-    border: 10px solid salmon;
-  }
 
   .BlogPost{
-    border: 3px solid rgb(0, 255, 221);
+    border: 3px solid rgba(0, 255, 221, 0.459);
     border-radius: 5px;
-    max-width: 50%;
-    margin: 20px;
-    padding: 18px;
-
+    max-width: 100%;
+    max-height: 100%;
+    margin: 25px;
+    padding: 22px;
+    background-color: rgba(231, 196, 156, 0.541);
   }
+  .avatarCat {
+  height: 100px;
+  display: inline-block;
+  background-color: #171717;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-left: 20px 0px 30px 0px;
+  border: solid 1px white;
+}
   .Author{
     color: black;
-    border: 3px solid hsl(59, 100%, 50%);
+    font-size: 200%;
+    font-family: 'Bree Serif', serif;
   }
-  .Subject {
-    color: black;
-    border: 3px solid rgb(255, 0, 0);
+  .Title{
+      color: black;
   }
-  .Confidence{
-    color: black;
-    border: 3px solid rgb(255, 0, 212);
+  .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 130%;
+  color: black;
+  margin: 1%;
+  font-family: 'Berkshire Swash', cursive;
   }
   .Content{
     color: black;
-    border: 3px solid rgb(123, 255, 0);
+    font-size: 100%;
+    font-family: 'Lemonada', cursive;
   }

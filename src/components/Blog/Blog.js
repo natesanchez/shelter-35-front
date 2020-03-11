@@ -33,18 +33,20 @@ class Blog extends Component {
         let catUser = catNames.random();
         return (
           <div className="Main">
+            <div className="BlogPost">
             <img
               className="avatarCat"
               src={`https://robohash.org/ca${post._id}?set=set4`}
-              alt="cat"
-            ></img>
-            <div className="BlogPost">
-              <h3>User: {catUser}</h3>
-              <h1 className="Title"> Title: {post.postTitle}</h1>
-              <h2 className="Author">Author: {post.postauthor}</h2>
-              <h4 className="CourseWeek">courseWeek: {post.postcourseWeek}</h4>
-              <h5 className="Confidence">confidenceInYourContent: {post.postconfidenceInYourContent}</h5>
-              <h6 className="Content">Content: {post.postcontent}</h6>
+              alt="cat">
+            </img>
+              <h3 className="Author">{post.author}</h3>
+              <h1 className="Title"> Title:{post.title}</h1>
+              {/* <h2 className="User">User:{catUser}</h2> */}
+                      <div Class="flex">
+              <h4 className="CourseWeek">Course Week: {post.courseWeek}</h4>
+              <h5 className="Confidence">Content Confidence: {post.confidenceInYourContent}/100 </h5>
+              </div>
+              <h6 className="Content">{post.content}</h6>
             </div>
           </div>
         );
