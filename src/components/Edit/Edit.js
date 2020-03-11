@@ -11,12 +11,21 @@ class Edit extends Component {
     super(props);
     //
     this.state = {
+      _id: "",
       postTitle: "",
       postComment: ""
     };
+    this.onChangeId = this.onChangeId.bind(this);
     this.onChangeTitle = this.onChangeTitle.bind(this);
     this.onChangeComment = this.onChangeComment.bind(this);
   }
+
+  onChangeId = e => {
+    this.setState({
+      postId: e.target.value
+    });
+    console.log(this.state._id);
+  };
 
   onChangeTitle = e => {
     this.setState({
@@ -55,6 +64,9 @@ class Edit extends Component {
   render() {
     return (
       <div className="newPostContainer">
+        <div>
+          <Title className="getId" type="text" placeholder="Post the ID here" />
+        </div>
         <form className="submitForm" onSubmit={this.onSubmit}>
           <h1>Edit Post</h1>
           <div className="formInput">

@@ -46,11 +46,14 @@ class Home extends Component {
               <h5 className="postId">postID: {post._id}</h5>
               <div className="buttons">
                 {/* look into with router or pass props using link component */}
-                <Link className="editPost" to="/edit">
+                {/* <Link className="editPost" to="/edit">
                   <Button label="Edit" type="edit" />
-                </Link>
-                <Link className="deletePost" to="/delete">
+                </Link> */}
+                {/* <Link className="deletePost" to="/delete">
                   <Button label="Delete" type="delete" />
+                </Link> */}
+                <Link className="editPost" to="/edit">
+                  <Button label="Manipulate" type="manipulate" />
                 </Link>
               </div>
             </div>

@@ -36,7 +36,7 @@ class App extends Component {
             <Route path="/home" component={Home} />
             <Route path="/faq" component={FAQ} />
             <Route path="/edit" component={Edit} />
-            <Route path="/delete" component={Delete} />
+            {/* <Route path="/delete" component={Delete} /> */}
           </Switch>
         </main>
       </div>
