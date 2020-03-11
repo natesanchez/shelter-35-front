@@ -41,6 +41,8 @@ class Home extends Component {
               <h1 className="postTitle"> Subject: {post.postTitle}</h1>
               <br />
               <h2 className="postMessage">Message: {post.postComment}</h2>
+              <br />
+              <h5 className="postId">postID: {post._id}</h5>
             </div>
           </div>
         );
