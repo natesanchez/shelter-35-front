@@ -35,7 +35,10 @@ class App extends Component {
             <Route path="/blog" component={Blog} />
             <Route path="/home" component={Home} />
             <Route path="/faq" component={FAQ} />
-            <Route path="/edit" component={Edit} />
+            <Route
+              path="/edit/:id"
+              render={routerProps => <Edit {...routerProps} />}
+            />
             {/* <Route path="/delete" component={Delete} /> */}
           </Switch>
         </main>

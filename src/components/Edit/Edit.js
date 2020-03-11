@@ -3,99 +3,93 @@ import Axios from "axios";
 import Comment from "../Comment/Comment";
 import Button from "../Button/Button";
 import Title from "../Title input/Title";
-import "../Post/Post.css";
+import "../Edit/Edit.css";
 import { Link } from "react-router-dom";
 
 class Edit extends Component {
   constructor(props) {
     super(props);
-    //
     this.state = {
-      _id: "",
+      _id: null,
       postTitle: "",
-      postComment: ""
+      postComment: "",
+      data: null
     };
-    this.onChangeId = this.onChangeId.bind(this);
-    this.onChangeTitle = this.onChangeTitle.bind(this);
-    this.onChangeComment = this.onChangeComment.bind(this);
+    // this.onChangeId = this.onChangeId.bind(this);
+    // this.onChangeTitle = this.onChangeTitle.bind(this);
+    // this.onChangeComment = this.onChangeComment.bind(this);
   }
 
   onChangeId = e => {
     this.setState({
-      postId: e.target.value
+      _id: e.target.value
     });
     console.log(this.state._id);
   };
 
-  onChangeTitle = e => {
-    this.setState({
-      postTitle: e.target.value
-    });
-    console.log(this.state.postTitle);
-  };
+  // onChangeTitle = e => {
+  //   this.setState({
+  //     postTitle: e.target.value
+  //   });
+  //   console.log(this.state.postTitle);
+  // };
 
-  onChangeComment = e => {
-    this.setState({
-      postComment: e.target.value
-    });
-    console.log(this.state.postComment);
-  };
+  // onChangeComment = e => {
+  //   this.setState({
+  //     postComment: e.target.value
+  //   });
+  //   console.log(this.state.postComment);
+  // };
 
-  onSubmit = e => {
-    if (this.state.postTitle === "" || this.state.postComment === "") {
-      return;
-    } else {
-      e.preventDefault();
-      console.log("Submitted");
-      const newPost = {
-        postTitle: this.state.postTitle,
-        postComment: this.state.postComment
-      };
-      Axios.post("https://shelter35.herokuapp.com/posts", newPost).then(res =>
-        console.log(res)
-      );
-      this.setState({
-        postTitle: "",
-        postComment: ""
+  componentDidMount() {
+    console.log("Mounted");
+    let url =
+      "https://shelter35.herokuapp.com/posts/id/" + this.props.match.params.id;
+    Axios.get(url)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ data: res.data });
+      })
+      .catch(error => {
+        console.log(error);
       });
-      this.props.history.push("/home");
-    }
-  };
+  }
+
   render() {
-    return (
-      <div className="newPostContainer">
+    if (this.state.data) {
+      return (
         <div>
-          <Title className="getId" type="text" placeholder="Post the ID here" />
+          <div className="returnedData">
+            <h2 className="manipulateH1">postID: {this.state.data[0]._id}</h2>
+            <br />
+            <h3 className="manipulateH3">
+              Subject: {this.state.data[0].postTitle}
+            </h3>
+            <br />
+            <h3 className="manipulateH3">
+              Message: {this.state.data[0].postComment}
+            </h3>
+          </div>
+          <form>
+            Title: <input type="text"></input>
+            <br />
+            Message: <input type="text"></input>
+            <br />
+            <input type="submit" value="Submit Edit"></input>
+          </form>
+          <br />
+          <br />
+          <button className="deletePost">Delete this post entirely</button>
         </div>
-        <form className="submitForm" onSubmit={this.onSubmit}>
-          <h1>Edit Post</h1>
-          <div className="formInput">
-            <label className="inputLabel">Post Title: </label>
-            <Title
-              type="text"
-              placeholder="Post ID"
-              text
-              onChange={this.onChangeTitle}
-            />
-          </div>
-          <br />
-          <div className="formInput">
-            <label className="inputLabel">Post Comment: </label>
-            <Comment
-              className="inputBox"
-              label="Post your grievances here"
-              type="normal"
-              onChange={this.onChangeComment}
-            />
-          </div>
-          <br />
-          <div className="stuff">
-            <Button label="Edit" type="edit" />
-            <Button label="Delete" type="delete" />
-          </div>
-        </form>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div>
+          <h5>Loading...</h5>
+        </div>
+      );
+    }
   }
 }
+
 export default Edit;

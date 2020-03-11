@@ -52,7 +52,7 @@ class Home extends Component {
                 {/* <Link className="deletePost" to="/delete">
                   <Button label="Delete" type="delete" />
                 </Link> */}
-                <Link className="editPost" to="/edit">
+                <Link className="editPost" to={"/edit/" + post._id}>
                   <Button label="Manipulate" type="manipulate" />
                 </Link>
               </div>
