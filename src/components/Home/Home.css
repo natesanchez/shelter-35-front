@@ -53,7 +53,7 @@ nav {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px;
 }
 
@@ -65,4 +65,17 @@ nav {
 
 .postTitle {
   color: black;
+}
+
+.hiddenTitle {
+  /* color: black; */
+  color: rgba(20, 20, 20, 0.7);
+}
+
+.blog {
+  text-decoration: none;
+}
+
+.blog:hover {
+  cursor: default;
 }
