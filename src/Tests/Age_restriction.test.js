@@ -2,10 +2,9 @@ import React from "react";
 import { shallow } from "enzyme";
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
+import AgeRestriction from "../components/Age_restriction/Age_restriction";
 
 configure({ adapter: new Adapter() });
-
-import AgeRestriction from "../components/Age_restriction/Age_restriction";
 
 // We will describe a block of tests
 describe("Welcome page", () => {
