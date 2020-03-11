@@ -79,3 +79,7 @@ nav {
 .blog:hover {
   cursor: default;
 }
+
+.faq {
+  text-decoration: none;
+}
