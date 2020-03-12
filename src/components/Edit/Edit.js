@@ -5,19 +5,19 @@ import Button from "../Button/Button";
 import Title from "../Title input/Title";
 import "../Edit/Edit.css";
 import { Link } from "react-router-dom";
+import { TextBoxComponent } from "@syncfusion/ej2-react-inputs";
 
 class Edit extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       _id: null,
       postTitle: "",
       postComment: "",
-      data: null
+      data: null,
+      editTitle: "",
+      editComment: ""
     };
-    // this.onChangeId = this.onChangeId.bind(this);
-    // this.onChangeTitle = this.onChangeTitle.bind(this);
-    // this.onChangeComment = this.onChangeComment.bind(this);
   }
 
   onChangeId = e => {
@@ -27,19 +27,20 @@ class Edit extends Component {
     console.log(this.state._id);
   };
 
-  // onChangeTitle = e => {
-  //   this.setState({
-  //     postTitle: e.target.value
-  //   });
-  //   console.log(this.state.postTitle);
-  // };
+  onChangeTitle = e => {
+    this.setState({
+      editTitle: e.target.value
+    });
+    console.log(this.state.editTitle);
+  };
 
-  // onChangeComment = e => {
-  //   this.setState({
-  //     postComment: e.target.value
-  //   });
-  //   console.log(this.state.postComment);
-  // };
+  onChangeComment = e => {
+    this.setState({
+      editComment: e.target.value
+    });
+    console.log(this.state.postComment);
+    // console.log(e.target.value);
+  };
 
   deletePost = e => {
     e.preventDefault();
@@ -86,9 +87,17 @@ class Edit extends Component {
             </h3>
           </div>
           <form>
-            Title: <input type="text"></input>
+            Title: <input type="text" onChange={this.onChangeTitle}></input>
             <br />
-            Message: <input type="text"></input>
+            Message:{" "}
+            <TextBoxComponent
+              className="normal"
+              multiline={true}
+              placeholder="Place your grievances here..."
+              value=""
+              onChange={this.onChangeComment}
+            />
+            {/* Message: <input type="text"></input> */}
             <br />
             <input type="submit" value="Submit Edit"></input>
           </form>
