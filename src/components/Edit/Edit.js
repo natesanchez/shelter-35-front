@@ -42,6 +42,21 @@ class Edit extends Component {
     // console.log(e.target.value);
   };
 
+  deletePost = e => {
+    e.preventDefault();
+    let url =
+      "https://shelter35.herokuapp.com/posts/" + this.props.match.params.id;
+    console.log(url);
+    Axios.delete(url)
+      .then(res => {
+        console.log(res.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+    this.props.history.push("/home");
+  };
+
   componentDidMount() {
     console.log("Mounted");
     let url =
@@ -88,7 +103,9 @@ class Edit extends Component {
           </form>
           <br />
           <br />
-          <button className="deletePost">Delete this post entirely</button>
+          <button onClick={this.deletePost} className="deletePost">
+            Delete this post entirely
+          </button>
         </div>
       );
     } else {
