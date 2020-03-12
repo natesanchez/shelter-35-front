@@ -38,8 +38,30 @@ class Edit extends Component {
     this.setState({
       editComment: e.target.value
     });
-    console.log(this.state.postComment);
+    console.log(this.state.editComment);
     // console.log(e.target.value);
+  };
+
+  updatePost = e => {
+    if (this.state.editTitle === "" || this.state.editComment === "") {
+      return;
+    } else {
+      e.preventDefault();
+      console.log("Submitted");
+      const editedPost = {
+        postTitle: this.state.editTitle,
+        postComment: this.state.editComment
+      };
+      Axios.put(
+        "https://shelter35.herokuapp.com/posts/" + this.props.match.params.id,
+        editedPost
+      ).then(res => console.log(res));
+      this.setState({
+        postTitle: "",
+        postComment: ""
+      });
+      this.props.history.push("/home");
+    }
   };
 
   deletePost = e => {
@@ -99,7 +121,11 @@ class Edit extends Component {
             />
             {/* Message: <input type="text"></input> */}
             <br />
-            <input type="submit" value="Submit Edit"></input>
+            <input
+              onClick={this.updatePost}
+              type="submit"
+              value="Submit Edit"
+            ></input>
           </form>
           <br />
           <br />
