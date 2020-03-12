@@ -15,3 +15,5 @@ describe("Welcome page", () => {
     expect(component.contains(<h1>SHELTER 35</h1>)).toBe(true);
   });
 });
+
+describe("");
