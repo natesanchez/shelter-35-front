@@ -58,13 +58,25 @@ class Blog extends Component {
               <h1 className="title">Shelter35</h1>
             </Link>
           </nav>
-          <p className="pm"> How to Post in Postman</p>  
-          <p   className="codepen">     
-          <iframe height="399" style={{width: "100%"}} scrolling="no" title="Example Shelter Blog Post for Postman " 
-          src="https://codepen.io/Wolf8/embed/eYNMNbV?height=399&theme-id=dark&default-tab=result" frameborder="yes" allowtransparency="true" allowfullscreen="true">
-          See the Pen <a href='https://codepen.io/Wolf8/pen/eYNMNbV'>Example Shelter Blog Post for Postman </a> by Andy G
-          (<a href='https://codepen.io/Wolf8'>@Wolf8</a>) on <a href='https://codepen.io'>CodePen</a>.
-          </iframe>
+          <p className="pm"> How to Post in Postman</p>
+          <p className="codepen">
+            <iframe
+              height="399"
+              style={{ width: "100%" }}
+              scrolling="no"
+              title="Example Shelter Blog Post from Postman "
+              src="https://codepen.io/Wolf8/embed/eYNMNbV?height=399&theme-id=dark&default-tab=js"
+              frameborder="yes"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen{" "}
+              <a href="https://codepen.io/Wolf8/pen/eYNMNbV">
+                Example Shelter Blog Post for Postman{" "}
+              </a>{" "}
+              by Andy G (<a href="https://codepen.io/Wolf8">@Wolf8</a>) on{" "}
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
           </p>
           {/* <p className="pm"> courseWeek": 8</p>
           <p className="pm"> title": "Adding a Blog Post to Shelter</p>
