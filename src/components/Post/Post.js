@@ -49,7 +49,7 @@ class Post extends Component {
         postTitle: "",
         postComment: ""
       });
-      this.props.history.push("/home");
+      this.props.history.push("/submitted");
     }
   };
   render() {

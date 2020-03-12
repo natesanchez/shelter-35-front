@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
-// import Avatar from "./components/Avatar/Avatar";
 import AgeRes from "./components/Age_restriction/Age_restriction";
 import FAQ from "./components/FAQ/faq";
 import "./App.css";
@@ -10,6 +9,7 @@ import Blog from "./components/Blog/Blog";
 import Deleted from "./components/Deleted/Deleted";
 import Edit from "./components/Edit/Edit";
 import Edited from "./components/Edited/Edited";
+import Submitted from "./components/Submitted/Submitted";
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +38,7 @@ class App extends Component {
             <Route path="/faq" component={FAQ} />
             <Route path="/deleted" component={Deleted} />
             <Route path="/edited" component={Edited} />
+            <Route path="/submitted" component={Submitted} />
             <Route
               path="/edit/:id"
               render={routerProps => <Edit {...routerProps} />}
