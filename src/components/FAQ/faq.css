@@ -15,7 +15,6 @@
   box-shadow: 0 0 8px 5px hsl(0, 0%, 75%);
   background-color: rgb(61, 59, 59, 0.5);
   height: 600px;
-  
 }
 
 h1 {
@@ -24,7 +23,8 @@ h1 {
   font-family: "Henny Penny", cursive;
 }
 
-.ul, .li {
+.ul,
+.li {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
