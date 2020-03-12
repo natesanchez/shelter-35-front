@@ -9,12 +9,12 @@ function Agerestrict() {
       <div className="description">
         <h1 className="shelter-35-title">SHELTER 35</h1>
         <div className="para-container">
-          <p className="para-text">
+          <p className="para-text" data-test="para-text">
             The website contains high level coding materials. If you have any
             interest in becoming or maintaining a badass status, this site is
             for you.
           </p>
-          <p className="para-text">
+          <p className="para-text" data-test="para-text">
             Sometimes it is hard to speak up in Slack and be knowon for not
             knowing something or possibly judged. Here, you can feel freed.
             Shelter 35 is an open space to learn, talk and bond with your cohort
@@ -27,7 +27,7 @@ function Agerestrict() {
             pictures for your every post just to add a lil sumthin sumthin.
             Hence…Shelter35.
           </p>
-          <p className="para-text">
+          <p className="para-text" data-test="para-text">
             Lets all be good felines and not pee on the wall or "meow" at 2am
             for no reason or scratch the couch. By entering this site you hereby
             agree to have fun and build camaraderie with your fellow people. You
