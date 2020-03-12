@@ -80,3 +80,10 @@
   height: 30px;
   width: 100px;
 }
+
+.e-input {
+  min-width: 270px;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
