@@ -7,8 +7,9 @@ import FAQ from "./components/FAQ/faq";
 import "./App.css";
 import Post from "./components/Post/Post";
 import Blog from "./components/Blog/Blog";
+import Deleted from "./components/Deleted/Deleted";
 import Edit from "./components/Edit/Edit";
-import Delete from "./components/Delete/Delete";
+import Edited from "./components/Edited/Edited";
 
 class App extends Component {
   constructor(props) {
@@ -35,6 +36,8 @@ class App extends Component {
             <Route path="/blog" component={Blog} />
             <Route path="/home" component={Home} />
             <Route path="/faq" component={FAQ} />
+            <Route path="/deleted" component={Deleted} />
+            <Route path="/edited" component={Edited} />
             <Route
               path="/edit/:id"
               render={routerProps => <Edit {...routerProps} />}

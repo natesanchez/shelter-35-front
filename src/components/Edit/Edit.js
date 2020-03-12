@@ -60,7 +60,7 @@ class Edit extends Component {
         postTitle: "",
         postComment: ""
       });
-      this.props.history.push("/home");
+      this.props.history.push("/edited");
     }
   };
 
@@ -76,7 +76,7 @@ class Edit extends Component {
       .catch(error => {
         console.log(error);
       });
-    this.props.history.push("/home");
+    this.props.history.push("/deleted");
   };
 
   componentDidMount() {
