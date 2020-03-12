@@ -23,7 +23,8 @@ h1 {
   font-family: "Henny Penny", cursive;
 }
 
-ul, li {
+ul,
+li {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;

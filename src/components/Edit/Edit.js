@@ -135,9 +135,14 @@ class Edit extends Component {
                 value="Submit"
               ></input>
             </form>
-            <button onClick={this.deletePost} className="deletePost">
-              Delete Entire Post
-            </button>
+            <div className="bottomEdit">
+              <button onClick={this.deletePost} className="deletePost">
+                Delete Entire Post
+              </button>
+              <Link to={"/home"}>
+                <Button className="editHome" label="Home" type="home" />
+              </Link>
+            </div>
           </div>
         </div>
       );
