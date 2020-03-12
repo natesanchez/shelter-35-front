@@ -108,30 +108,37 @@ class Edit extends Component {
               Message: {this.state.data[0].postComment}
             </h3>
           </div>
-          <form>
-            Title: <input type="text" onChange={this.onChangeTitle}></input>
-            <br />
-            Message:{" "}
-            <TextBoxComponent
-              className="normal"
-              multiline={true}
-              placeholder="Place your grievances here..."
-              value=""
-              onChange={this.onChangeComment}
-            />
-            {/* Message: <input type="text"></input> */}
-            <br />
-            <input
-              onClick={this.updatePost}
-              type="submit"
-              value="Submit Edit"
-            ></input>
-          </form>
-          <br />
-          <br />
-          <button onClick={this.deletePost} className="deletePost">
-            Delete this post entirely
-          </button>
+          <div className="postToBeEdited">
+            <div className="editDirections">
+              Please Copy in the content from your selected post above into the
+              appropriate fields. Edit the content appropriately and submit.
+            </div>
+            <form>
+              <div className="title titleEdit">
+                Title: <input type="text" onChange={this.onChangeTitle}></input>
+              </div>
+              <div className="title messageEdit">
+                Message:{" "}
+                <TextBoxComponent
+                  className="normal"
+                  multiline={true}
+                  placeholder="Place your grievances here..."
+                  value=""
+                  onChange={this.onChangeComment}
+                  style={{ minBlockSize: "500px" }}
+                />
+              </div>
+              <input
+                className="editButton"
+                onClick={this.updatePost}
+                type="submit"
+                value="Submit"
+              ></input>
+            </form>
+            <button onClick={this.deletePost} className="deletePost">
+              Delete Entire Post
+            </button>
+          </div>
         </div>
       );
     } else {
