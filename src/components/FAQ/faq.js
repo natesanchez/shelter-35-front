@@ -5,33 +5,26 @@ import "./faq.css";
 function faq() {
   return (
     <div className="TopMain">
-
       <div class="informative">
         <h1>FAQ</h1>
         <div class="container">
-          <ul>
-           Whats is Shelter35?
-          </ul>
+          <ul>What is Shelter35?</ul>
           <li>
-           Shelter35 is a place to realese all the tears, fustration, happiness from our evil overlord "Zakk"
+            Shelter35 is a place to release all the tears, fustration, happiness
+            from our 12 week experience.
           </li>
-           <ul>
-           Do I need an Internet connection to use Shelter35?
-          </ul>
+          <ul>Do I need an Internet connection to use Shelter35?</ul>
           <li>
-            Yes you do. Shelter35  is a cloud-based website, meaning that your Meow's are backed up and available wherever you are.
+            Yes you do. Shelter35 is a cloud-based website, meaning that your
+            Meow's are backed up and available wherever you are.
           </li>
           <ul>
-          I'm really offended by that joke you posted!
+            Have a question that's not answered here. What email address should
+            I use to contact you?
           </ul>
           <li>
-          Sorry to hear that. We do hear that, alas, on just about every joke that is even slightly offensive. Please read the Page Warning again.
-          </li>
-           <ul>
-           Have a question that's not answered here. What email address should I use to contact you?
-          </ul>
-          <li> 
-          Please email nsanchez@usa.com If it’s not a holiday or a weekend, Nate would get back to you pretty slowly. Slower than a Snail.
+            Please email nsanchez@usa.com If it’s not a holiday or a weekend,
+            Nate will get back to you slowly. Like really slow.
           </li>
         </div>
       </div>
