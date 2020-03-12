@@ -115,7 +115,8 @@ class Edit extends Component {
             </div>
             <form>
               <div className="title titleEdit">
-                Title: <input type="text" onChange={this.onChangeTitle}></input>
+                Subject:{" "}
+                <input type="text" onChange={this.onChangeTitle}></input>
               </div>
               <div className="title messageEdit">
                 Message:{" "}
@@ -132,7 +133,7 @@ class Edit extends Component {
                 className="editButton"
                 onClick={this.updatePost}
                 type="submit"
-                value="Submit"
+                value="Submit Edit"
               ></input>
             </form>
             <div className="bottomEdit">

@@ -1,4 +1,4 @@
-.TopMain {
+.faqTopMain {
   background-position: center;
   background-image: url("https://i.imgur.com/ZaVp2H9.jpg");
   height: 100vh;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.informative {
+.faqinformative {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,8 +23,8 @@ h1 {
   font-family: "Henny Penny", cursive;
 }
 
-ul,
-li {
+.ul,
+.li {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
@@ -32,9 +32,9 @@ li {
   overflow-wrap: break-word;
   margin: 20px;
 }
-ul {
+.ul {
   color: aqua;
 }
-li {
+.li {
   color: yellow;
 }
