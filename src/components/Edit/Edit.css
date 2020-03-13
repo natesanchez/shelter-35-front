@@ -9,16 +9,110 @@
 }
 
 .returnedData {
-  border: 4px solid black;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 50px;
+  background-color: hotpink;
+}
+
+.editDirections {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.postToBeEdited {
+  border: 2px solid green;
+  margin: 50px;
   padding: 5px;
-  margin: 10px;
+  background-color: hotpink;
+}
+
+.titleEdit {
+  margin: 15px;
+}
+
+.messageEdit {
+  margin: 15px;
 }
 
 .deletePost {
-  height: 100px;
-  width: 300px;
-  background: red;
-  color: black;
-  font-size: 20px;
   cursor: pointer;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 25px;
+  height: 30px;
+  width: 150px;
+}
+
+.deletePost:hover {
+  cursor: pointer;
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 25px;
+  height: 30px;
+  width: 150px;
+}
+
+.editButton {
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 25px;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.editButton:hover {
+  cursor: pointer;
+  background-color: green;
+  border: 3px solid black;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 25px;
+  height: 30px;
+  width: 100px;
+}
+
+.e-input {
+  min-width: 270px;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.bottomEdit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.button-home {
+  cursor: pointer;
+  background-color: black;
+  border: 3px solid white;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 25px;
+  height: 30px;
+  width: 100px;
+}
+
+.button-home:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  border-radius: 7px;
+  padding: 5px 25px;
+  height: 30px;
+  width: 100px;
 }

@@ -87,3 +87,8 @@ nav {
 .buttons {
   float: right;
 }
+
+.button-manipulate {
+  cursor: pointer;
+  background-color: hotpink;
+}
