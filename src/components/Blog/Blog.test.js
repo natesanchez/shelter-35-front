@@ -9,9 +9,28 @@ const setUp = (props = {}) => {
 };
 
 describe("Blog test", () => {
-  describe("has props", () => {});
-
-  describe("has no props", () => {});
+  describe("has props", () => {
+    let wrapper;
+    beforeEach(() => {
+      const props = {
+        data: "test data",
+        videoURL: "test url"
+      };
+      wrapper = setUp(props);
+    });
+    it("Should run no errors", () => {
+      const component = shallow(<Blog />);
+      const div = component.find(".Main");
+      console.log(component.debug());
+      expect(div.length).toBe(1);
+    });
+    describe("has no props", () => {
+      let wrapper;
+      beforeEach(() => {
+        wrapper = setUp();
+      });
+    });
+  });
 });
 
 // beforeEach(() => {
