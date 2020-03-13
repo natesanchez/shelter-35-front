@@ -16,10 +16,16 @@ answering questions during the Q & A. We suggest the following structure:
   Anderson built out the reusable components like the buttons, title input form, and provided significant styling improvements. Anderson built out the blog component and made sure that was fully functional.
   Andrew did a significant amount research on the testing using Jest, and come to find out, that's way more complicated than we originally anticipated. He spent 8 hours just on researching why we couldn't get our tests to work on each others computers and built out some great tests. Andrew also built out a few components like the entry page.
 - Why is it useful? What is your "pitch"?
+  - This gives people the ability to vent or discuss topics in complete anonymity. There's no holding back when you can provide feedback or voice your ideas when there's no reprisal.
 
 ## Demonstrating Your App
 
 - What are the integral features of your app?
+  - We have full CRUD
+  - We built multiple components, imported them into other components,
+  - We used props and state!
+  - We built 15 different components (majority are functional components, but 7 were class components that used either state or received props)
+  - We used Jest to test our components
 
 ## Demonstrating Your Code
 
@@ -35,7 +41,7 @@ answering questions during the Q & A. We suggest the following structure:
 ## The Planning Process
 
 - How did you arrive at this idea?
-  - We consolidated two different ideas. Anderson is a cat fan, and there are a decent amount of Cat APIs, we knew we could easily mass on that energy, so we let that drive our idea. We also knew that it should be fun, and somehow we stumbled onto an anonomous posting application that generates random names and avatars for posters. From there, our ideas grew based on the needs of an MVP app.
+  - We consolidated two different ideas. Anderson is a cat fan, and there are a decent amount of Cat APIs, we knew we could easily mass on that energy, so we let that drive our idea. We also knew that it should be fun, and somehow we stumbled onto an anonymous posting application that generates random names and avatars for posters. From there, our ideas grew based on the needs of an MVP app.
 - How did you decide who would have which responsibilities?
   - We broke these down based on people's strengths. I focused on the back end in the beginning because we knew we could get it up and running quickly. We knew Nate was quite efficient and so we put him in charge of managing the front end repo. From there, we allowed people to tackle problems they were interested in learning because they were weak in it or if we knew we needed to tackle a problem quickly. Andrew jumped on the testing, which was great because he focused heavily on that and learned a bunch. I ended up jumping on the most complicated REACT state/props problem so I could try and learn REACT.
 - What would you change about your planning process?
