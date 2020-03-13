@@ -2,6 +2,7 @@ import React from "react";
 import EnzymeAdapter from "../../setupTests.js";
 import { shallow } from "enzyme";
 import Blog from "./Blog.js";
+import { findByTestAtrr } from "../../utility.js";
 
 const setUp = (props = {}) => {
   const component = shallow(<Blog {...props} />);
@@ -19,10 +20,9 @@ describe("Blog test", () => {
       wrapper = setUp(props);
     });
     it("Should run no errors", () => {
-      const component = shallow(<Blog />);
-      const div = component.find(".Main");
+      const component = findByTestAtrr(wrapper, "main");
       console.log(component.debug());
-      expect(div.length).toBe(1);
+      expect(component.length).toBe(1);
     });
     describe("has no props", () => {
       let wrapper;

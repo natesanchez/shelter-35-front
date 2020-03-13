@@ -3,15 +3,13 @@ import catNames from "cat-names";
 import { Link } from "react-router-dom";
 import "./Blog.css";
 
-
-
 class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: null,
       videoURL:
-      "https://cdn.dribbble.com/users/160117/screenshots/3197970/main.gif?vid=1"
+        "https://cdn.dribbble.com/users/160117/screenshots/3197970/main.gif?vid=1"
     };
   }
 
@@ -22,7 +20,7 @@ class Blog extends Component {
         .then(res => res.json())
         .then(res => {
           this.setState({ data: res });
-          console.log(this.state.data)
+          console.log(this.state.data);
         });
     }
   }
@@ -32,19 +30,21 @@ class Blog extends Component {
       let posts = this.state.data.map(post => {
         let catUser = catNames.random();
         return (
-          <div className="Main">
+          <div className="Main" testing="main">
             <div className="BlogPost">
-            <img
-              className="avatarCat"
-              src={`https://robohash.org/ca${post._id}?set=set4`}
-              alt="cat">
-            </img>
+              <img
+                className="avatarCat"
+                src={`https://robohash.org/ca${post._id}?set=set4`}
+                alt="cat"
+              ></img>
               <h3 className="Author">{post.author}</h3>
               <h1 className="Title"> Title:{post.title}</h1>
               {/* <h2 className="User">User:{catUser}</h2> */}
-                      <div Class="flex">
-              <h4 className="CourseWeek">Course Week: {post.courseWeek}</h4>
-              <h5 className="Confidence">Content Confidence: {post.confidenceInYourContent}/10 </h5>
+              <div Class="flex">
+                <h4 className="CourseWeek">Course Week: {post.courseWeek}</h4>
+                <h5 className="Confidence">
+                  Content Confidence: {post.confidenceInYourContent}/10{" "}
+                </h5>
               </div>
               <h6 className="Content">{post.content}</h6>
             </div>
@@ -76,21 +76,3 @@ class Blog extends Component {
 }
 
 export default Blog;
-
-// <div className="Main">
-// <div className="Container">
-// <h1 className="BlogPost"></h1>
-// <h2 className="Author"></h2>
-// <p>Author</p>
-// <h3 className="Title"></h3>
-// <p>Title</p>
-// <h4 className="Courseweek"></h4>
-// <p>8</p>
-// <h5 className="Confidence"></h5>
-// <p>6/10</p>
-// <h6 className="Content"></h6>
-// <p>Content</p>
-
-//   <div class="">hello world</div>
-//    </div>
-//   </div>
