@@ -46,9 +46,9 @@ answering questions during the Q & A. We suggest the following structure:
 - What Git Workflow did you follow?
   - we followed the centralized workflow. Nate managed a bunch of the repo management for frontend.
 - What did you like about this workflow; what did you dislike?
-  - I honestly think it went well. The only
+  - I honestly think it went well. The only thing that sucks was learning how to merge and learning about conflict resolution, but it wasn't terrible.
 - Did you run into any challenges with this workflow? How did you solve them?
-  -
+  - If Nate or I weren't around, then that creates a lot of risk for who can push to prod. I know that this will eventually change as we increase our working knowledge of git.
 
 ## The Week
 
