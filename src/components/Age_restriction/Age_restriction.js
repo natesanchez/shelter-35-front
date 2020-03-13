@@ -15,7 +15,7 @@ function Agerestrict() {
             for you.
           </p>
           <p className="para-text" data-test="para-text">
-            Sometimes it is hard to speak up in Slack and be knowon for not
+            Sometimes it is hard to speak up in Slack and be seen for not
             knowing something or possibly judged. Here, you can feel freed.
             Shelter 35 is an open space to learn, talk and bond with your cohort
             over anonymous conversation during the SEI 35 experience. PLEASE,
