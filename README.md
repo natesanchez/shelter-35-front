@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## SHELTER 35
 
-## Available Scripts
+- Our team is made up of Nate, Matt, Anderson and Andrew
 
-In the project directory, you can run:
+- This app was built in React.js and MongoDb
 
-### `npm start`
+- Take a look and feel free to post! We all have our struggles, so lets talk about it! "put in deployed link"
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ABOUT
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Sometimes it is hard to speak up in Slack and be seen for not knowing something or possibly judged. Here, you dont have that problem. Shelter 35 is an open space to learn, talk and bond with your cohort (anonymously) during the SEI 35 experience. This is a place to complain about work, let out your React anger, and sing to the high heavens when your errors suddenly disappear (which won’t happen). Here is where you get to do all that without judgement of your struggles. To add a little fun and light heartedness to the situations we have given you random names and random cat pictures for your every post just to add a lil sumthin sumthin. Hence…Shelter35.
 
-### `npm test`
+## VISUAL CHOICES
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Simple, fun and enjoyable pictures as well as blog post containers. Making everything easy to read and perfor.
 
-### `npm run build`
+## INTEGRAL FEATURES
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Full CRUD has to be available to make the site function properly
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- The ability to be anonymous is key, otherwise, this is just another Slack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## DIFFICULTIES
 
-### `npm run eject`
+- Testing was an issue simply becuase it should have been run from the very beginning. Because of this, it is easy to see what features and possibly components could have been made more DRY or not been used at all.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Fulfilling full CRUD was a difficulty because of the routing that needs to be done as well as the clean functionality when a feature is induced
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Debugging some CSS when merging conflicts came about was not necessarily an issue for our group, though it is easy to see how miscommunication or imporper merging could throw everything to a hault
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## LEARNING AND ACCOMPLISHMENTS
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Working as a team added some comfort and attitude boost because not one person felt "alone" with an issue or bug they came accross. This took learning to communicate the right way and make sure the team was "all in" together on a lot of decisions. It seems we are all quite happy with the result and have some pride with it
 
-## Learn More
+- The app functions as we had dreampt it at the start. Seeing this product as it is now is humbling. It took the team to get it done in the alloted time and maybe next time we can built something faster, better and run at high volumes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ROADMAP / FUTURE FEATURES
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Feature wise, as a team we are happy with what we have done. On launching though there is a some delay to performance based on volume. Re-assessment to performance and refracting is needed to make the site running seamlessly. Going forward, proper testing and component structuring should help with this before launching.
