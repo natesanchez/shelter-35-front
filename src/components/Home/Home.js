@@ -28,7 +28,7 @@ class Home extends Component {
 
   render() {
     if (this.state.data) {
-      let posts = this.state.data.map(post => {
+      let posts = this.state.data.reverse().map(post => {
         let catUser = catNames.random();
         return (
           <div className="mainContain">
@@ -53,7 +53,11 @@ class Home extends Component {
                   <Button label="Delete" type="delete" />
                 </Link> */}
                 <Link className="editPost" to={"/edit/" + post._id}>
-                  <Button label="Manipulate" type="manipulate" />
+                  <Button
+                    className="manipulateButton"
+                    label="Manipulate"
+                    type="manipulate"
+                  />
                 </Link>
               </div>
             </div>

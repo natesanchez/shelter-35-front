@@ -1,0 +1,23 @@
+.editedPost {
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.editedButton {
+  width: 200px;
+  height: 50px;
+  background-color: lawngreen;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.editedDiv {
+  width: 100%;
+  height: 100vh;
+}
+
+.buttonDiv2 {
+  text-align: center;
+  margin: 50px;
+}

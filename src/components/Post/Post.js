@@ -4,6 +4,7 @@ import Comment from "../Comment/Comment";
 import Button from "../Button/Button";
 import Title from "../Title input/Title";
 import "./Post.css";
+import { Link } from "react-router-dom";
 
 class Post extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class Post extends Component {
         postTitle: "",
         postComment: ""
       });
-      this.props.history.push("/home");
+      this.props.history.push("/submitted");
     }
   };
   render() {
@@ -76,12 +77,17 @@ class Post extends Component {
             />
           </div>
           <br />
-          <Button
-            className="submitPost"
-            label="Submit"
-            type="white"
-            value="Submit"
-          />
+          <div className="bottomEdit">
+            <Button
+              className="submitPost"
+              label="Submit"
+              type="white"
+              value="Submit"
+            />
+            <Link to={"/home"}>
+              <Button className="editHome" label="Home" type="home" />
+            </Link>
+          </div>
         </form>
       </div>
     );
